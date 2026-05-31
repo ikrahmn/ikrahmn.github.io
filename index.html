@@ -14,36 +14,46 @@
     <header>
         <div class="navbar">
             <a href="#" class="logo">IKRAM<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Experiences</a></li>
-                <li><a href="#">Contact</a></li>
+            
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#main">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
 
     <section id="main">
         <div class="container main-layout">
-
             <div class="main-content">
                 <span class="content-tag">Available for projects!</span>
                 <h1 class="name">I'm <span class="gradient-text">Ikram Rahmani</span></h1>
                 <p class="main-text">A software engineer that brings engineering precision with intelligence of computation and digital solutions.</p>
-                <a href="#" class="btn-class">Explore Projects</a>
+                <div class="cta-group">
+                    <a href="#projects" class="btn-class">Explore Projects</a>
+                    <a href="assets/resume.pdf" download class="btn-class btn-secondary">Download Resume</a>
+                </div>
             </div>
 
             <div class="main-image-wrapper">
                 <div class="image-glow"></div>
                 <div class="photo-placeholder">
+                    <img src="img/me.jpeg" alt="My Photo">
+                </div>
             </div>
-
         </div>
     </section>
 
     <section id="about">
-
         <div class="container">
             <span class="content-tag">Biography</span>
             
@@ -58,31 +68,83 @@
                     <p>Improving on my web development and taking machine learning seriously because i believe, <i>all roads lead to machine learning...</i></p>
                 </div>
 
-                <div class="about-cell cell-large">
-                    <h3>Development Stack</h3>
-                    <div class="cell-pill">
-                        <div class="skill-pill">Javascript / Web Development</div>
-                        <div class="skill-pill">Python</div>
-                        <div class="skill-pill">Jupyter Notebook</div>
-                        <div class="skill-pill">Data Analysis</div>
-                        <div class="skill-pill">Machine Learning</div>
-                        <div class="skill-pill">Databases / SQL</div>
-                        <div class="skill-pill">Java</div>
-                        <div class="skill-pill">C++</div>
-                        <div class="skill-pill">Penetration Testing</div>
-                        <div class="skill-pill">Lua</div>
+                <!-- High Impact Achievements Section -->
+                <div class="about-cell cell-large achievements-cell">
+                    <h3>Key Achievements</h3>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <span class="achievement-badge gold">1st</span>
+                            <div class="achievement-info">
+                                <h4>LKS Kecerdasan Artifisial Jakarta Timur II <span class="year-tag">2026</span></h4>
+                                <p>First Place winner in Artificial Intelligence competition regional tier.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-badge bronze">3rd</span>
+                            <div class="achievement-info">
+                                <h4>LKS Kecerdasan Artifisial Provinsi DKI Jakarta <span class="year-tag">2026</span></h4>
+                                <p>Third Place across the entire province of DKI Jakarta.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-badge karate">1st Kyu</span>
+                            <div class="achievement-info">
+                                <h4>Shotokan Karate <span class="year-tag">2026</span></h4>
+                                <p>Advanced brown belt classification showcasing high physical discipline and tactical focus.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="about-cell">
-                    <h3>Achievements</h3>
-                    <div class="cell-pill">
-                        <div class="skill-pill">1st-Place LKS Kecerdasan Artifial Jakarta Timur II 2026</div>
-                        <div class="skill-pill">3rd-Place LKS Kecerdasan Artifisial Provinsi DKI Jakarta 2026</div>
-                        <div class="skill-pill">1st-Kyuu Shotokan Karate</div>
+                    <h3>Development Stack</h3>
+                    <div class="cell-pill interactive-skills">
+                        <div class="skill-pill" data-level="expert">Javascript / Web</div>
+                        <div class="skill-pill" data-level="expert">Python</div>
+                        <div class="skill-pill">Jupyter Notebook</div>
+                        <div class="skill-pill">Data Analysis</div>
+                        <div class="skill-pill" data-level="ai">Machine Learning</div>
+                        <div class="skill-pill">Databases / SQL</div>
+                        <div class="skill-pill">Java</div>
+                        <div class="skill-pill">C++</div>
+                        <div class="skill-pill" data-level="security">Penetration Testing</div>
+                        <div class="skill-pill">Lua</div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- New Experiences Timeline Section -->
+    <section id="experiences">
+        <div class="container">
+            <span class="content-tag">My Journey</span>
+            <h2 class="section-title">Experiences & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Independent Developer</h3>
+                        <h4>H4Development</h4>
+                        <p>Learning and building custom software, automated tools, and production-ready web properties for freelance contracts and localized organizational challenges. Has been working on these skills since Elementry School!</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Vocational Student</h3>
+                        <h4>SMKN 68 Jakarta</h4>
+                        <p>Pursuing a structural Welding Major while cross-training independently in advanced computer science architectures, data analytics, and machine learning.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2026</div>
+                    <div class="timeline-content">
+                        <h3>Artificial Intelligence Winning</h3>
+                        <h4>LKS (Lomba Kompetensi Siswa)</h4>
+                        <p>Engineered predictive algorithmic systems under compressed deadlines, securing top placements in artificial intelligence models at regional and provincial phases. In result of 1st Place in region of Jakarta Timur II and 3rd Place in provincial of DKI Jakarta.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -91,56 +153,67 @@
         <div class="container">
             <span class="content-tag">My Projects</span>
             <div class="project-grid">
-
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="img/icon.png" alt="">
+                        <img src="img/weldeye.png" alt="WeldEye Project Image">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Project 1</h3>
-                        <p class="project-desc">Project descriptions</p>
+                        <h3 class="project-title">WeldEye - Welding Defect Detection</h3>
+                        <p class="project-desc">An app to help industries standardize welding results by detecting result's defects while reducing the need for Welding Inspector. Resulting NIKRA model as its main model to detect welding defects based on image input.</p>
                         <div class="project-tags">
-                            <span class="tag">Tags1</span>
-                            <span class="tag">Tags2</span>
+                            <span class="tag-ondev">WIP</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Full-Stack</span>
                         </div>
+                        <a href="https://github.com/ikrahmn/weldeye" target="_blank" class="project-btn">View Project &rarr;</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-img">
+                        <img src="img/website-osis68.png" alt="">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Project 1</h3>
-                        <p class="project-desc">Project descriptions</p>
+                        <h3 class="project-title">OSIS SMKN 68 Jakarta Website</h3>
+                        <p class="project-desc">Creating my school student council organization website as it's portofolio and my Program Kerja. Has been acsessed by more than 300+ students.</p>
                         <div class="project-tags">
-                            <span class="tag">Tags1</span>
-                            <span class="tag">Tags2</span>
+                            <span class="tag-active">Active</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Full-Stack</span>
                         </div>
+                        <a href="https://osissmkn68jkt.github.io/" target="_blank" class="project-btn">View Project &rarr;</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-img">
+                        <img src="img/trashmap.png" alt="">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Project 1</h3>
-                        <p class="project-desc">Project descriptions</p>
+                        <h3 class="project-title">TrashMap</h3>
+                        <p class="project-desc">Community-based geospatial app for locating public trash bins.</p>
                         <div class="project-tags">
-                            <span class="tag">Tags1</span>
-                            <span class="tag">Tags2</span>
+                            <span class="tag-ondev">WIP</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Full-Stack</span>
                         </div>
+                        <a href="https://github.com/ikrahmn/TrashMap" target="_blank" class="project-btn">View Project &rarr;</a>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-img">
+                        <img src="img/qoorah.png" alt="">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Project 1</h3>
-                        <p class="project-desc">Project descriptions</p>
+                        <h3 class="project-title">Qoorah</h3>
+                        <p class="project-desc">A new modern way to read and listen to Al-Quran. Introducing a new way to access Al-Qur`an more easily</p>
                         <div class="project-tags">
-                            <span class="tag">Tags1</span>
-                            <span class="tag">Tags2</span>
+                            <span class="tag-active">Active</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Fun Project</span>
                         </div>
+                        <a href="https://lkssmkn68.github.io/qoorah/" target="_blank" class="project-btn">View Project &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -168,8 +241,17 @@
                     <label for="message">Tell me more</label>
                     <textarea id="message" rows="5" placeholder="Tell me what you need..." required></textarea>
                 </div>
-                <button type="submit" class="btn-class submit-btn">Send Signal</button>
+                <button type="submit" class="btn-class submit-btn">Send Email</button>
             </form>
+
+            <div class="social-links-section">
+                <h3 class="social-title">REACH OUT TO ME</h3>
+                <div class="social-pills">
+                    <a href="https://github.com" target="_blank" class="social-pill">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-pill">LinkedIn</a>
+                    <a href="https://instagram.com" target="_blank" class="social-pill">Instagram</a>
+                </div>
+            </div>
         </div>
     </section>
     
